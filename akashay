@@ -1,0 +1,127 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+
+\textbf{Akshay Rajput} \\
+\indent Email-id : \textbf{\url{test@gmail.com}} \\
+\indent Mobile No.: \textbf{9999999999}, \ \\
+\indent \textbf{\url{http://github.com/akshayrajput}}\\
+
+\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
+\\
+%\begin{table}[ht!]
+%\begin{center}
+\indent \rule{6.8in}{0.4pt}\\
+\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} }
+\noindent \textbf{Year} & \textbf{Degree/Exam} & \textbf{Institute} & \textbf{GPA/Marks(\%)}\\
+Jul, 2014 - Jul, 2016 & M.TECH in Computer Science & Indian Institute of Technology Delhi & 9.041/10\\
+Aug, 2010 - Jun, 2014 & B.TECH in Computer Science & Graphic Era University Dehradun & 95.78 \% \\
+2010 & C.B.S.E & Kamal model sr. sec. school & 90.00 \% \\
+2008 & C.B.S.E & Rajdhani public school & 80.00 \%\\
+
+\end{tabular}
+\indent \rule{6.8in}{0.4pt}
+%\end{center}
+%\end{table}
+\\
+
+\resheading{\textbf{IIT DELHI THESIS} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0.5em}
+\item \textbf{Title - }Connected Home Devices for Smart Home.
+\item \textbf{Supervisor - }Dr. Kolin Paul
+\item \textbf{Description - } Developed a software for devices in home using Intel Galileo board and AllJoyn framework. Different devices can be connected to one home Wi-Fi directly or indirectly, any audio or video file present on any device can be buffered on any other device without downloading.
+\end{itemize}
+
+\resheading{\textbf{INTERNSHIPS} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0.5em}
+\item \textbf{Online O.P.D. Patient Management System, Significant Software Solutions (Jun, 2013 - July, 2013) : }To develop
+a web portal for doctors to save their patients' details. If a patient go to different doctor he/she can see the
+previous treatment(s) given to the patient.
+The web portal was developed and uploaded to a server, and having URL \url{http://www.visualpatients.com}
+\end{itemize}
+
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0.5em}
+\item \textbf{Digit Recognition} (Mar, 2015 - Apr, 2015) : Developed an artificial neural network classifier for recognizing
+handwritten digits which was trained and tested using MNIST dataset giving 98\% accuracy.
+\item \textbf{Spam Detection} (Apr, 2015 - May, 2015) : Developed a SVM classifier for recognizing if an email is spam or not.
+handwritten digits which was trained and tested using MNIST dataset giving 98\% accuracy.
+\item \textbf{ARM V8 simulator} (July, 2015 - Aug, 2015) : Developed a Simulator for running the executable that was compiled for
+ARM V8.
+\item \textbf{Distributed Hash Table} (Aug, 2015 - Sept, 2015) : Developed a distributed hash table to store and retrieve
+(key,value) pair that is stored on different computers on the same network.
+\item \textbf{Multiplayer game - DOTA} (Sept, 2015 - Nov, 2015) : Developed a multiplayer game like DOTA, the game can be
+played in both single player and multiplayer mode. AI techniques were used for BOTS.
+\item \textbf{Tomasulo Algorithm} (Mar, 2016 - May, 2016) : Implemented Tomasulo algorithm for out of order pipeline execution
+for Tejas (open-source, Java-based multicore architectural simulator).
+\item \textbf{Write Aware Data Layout} (Aug, 2015 - Nov, 2015) : In this project llvm and pintool were used for profiling the program
+to make array in interleaving order to minimize number of writes in Phase Change Memory.
+\item \textbf{Subset C compiler} (Oct, 2013 - Apr, 2014) : Developed a compiler for subset of C language using flex, yacc, C
+language and NASM as B.TECH major term project.
+\item \textbf{Time Table Web Portal} (Jan, 2015 - Apr, 2015) : Built an energy efficient time table management room booking web
+portal as M.TECH minor project that will be used in IIT-Delhi.
+\end{itemize}
+
+\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0em}
+\item \noindent \textbf{Languages} \textbf{Python} (proficient), \textbf{Javascript} (proficient), \textbf{C} (proficient), \textbf{C++} (proficient), \textbf{SML}, \textbf{Prolog}, \textbf{HTML}, \textbf{SQL}, \textbf{PHP}, \textbf{Java}.\\
+ \item \noindent\textbf{Tools and Frameworks} MATLAB, ReactJS, Meteor, OpenGL, \LaTeX\\
+\item \noindent \textbf{Machine Learning Tools} Tensorflow, Keras, scikit-learn.
+\end{itemize}
+
+\resheading{\textbf{SCHOLASTIC ACHIEVEMENTS} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0em}
+\item \noindent \textbf{GATE(CSE) - }Scored AIR 70 out of 155190 in 2014
+\item \noindent\textbf{Brain Buster - }Secured I st rank in overnight coding competition in II nd year B.TECH and received a cash price of INR
+3000.
+\end{itemize}
+
+\resheading{\textbf{POSITIONS OF RESPONSIBILITY} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0em}
+\item \noindent \textbf{Teaching Assistant, IIT Delhi} Evaluted answer scripts, designed assignments and resolved students' queries for course  and conducted lab sessions for the courses Automata and Introduction to computer science (twice).
+\item \noindent \textbf{Oraganising Member of ${7^{th}}$ UCOST Congress-2013} (Nov, 2013) : Participated as an active member of Reception and Welcome Committee of ${7^{th}}$ Uttarakhand Council of Scince and Technology congress.
+\end{itemize}
+\end{document}
